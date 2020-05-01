@@ -1,0 +1,4 @@
+FROM java:8
+EXPOSE 8080
+ADD /target/deploy-me.war deploy-me.war
+ENTRYPOINT ["java", "-jar", "deploy-me.war"]
