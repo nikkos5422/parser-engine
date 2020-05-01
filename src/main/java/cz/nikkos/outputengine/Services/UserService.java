@@ -1,8 +1,8 @@
-package cz.notix.outputengine.Services;
+package cz.nikkos.outputengine.Services;
 
-import cz.notix.outputengine.ExceptionHandling.CustomException;
-import cz.notix.outputengine.Model.User;
-import cz.notix.outputengine.Repository.UserRepository;
+import cz.nikkos.outputengine.ExceptionHandling.CustomException;
+import cz.nikkos.outputengine.Model.User;
+import cz.nikkos.outputengine.Repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 @Service

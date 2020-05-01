@@ -1,7 +1,7 @@
-package cz.notix.outputengine.Services;
+package cz.nikkos.outputengine.Services;
 
-import cz.notix.outputengine.ExceptionHandling.CustomException;
-import cz.notix.outputengine.ExceptionHandling.ResponseError;
+import cz.nikkos.outputengine.ExceptionHandling.CustomException;
+import cz.nikkos.outputengine.ExceptionHandling.ResponseError;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.stereotype.Service;
 

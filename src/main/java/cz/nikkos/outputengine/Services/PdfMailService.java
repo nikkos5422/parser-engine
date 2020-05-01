@@ -1,7 +1,7 @@
-package cz.notix.outputengine.Services;
+package cz.nikkos.outputengine.Services;
 
-import cz.notix.outputengine.ExceptionHandling.CustomException;
-import cz.notix.outputengine.ExceptionHandling.ResponseError;
+import cz.nikkos.outputengine.ExceptionHandling.CustomException;
+import cz.nikkos.outputengine.ExceptionHandling.ResponseError;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -25,8 +25,8 @@ public class PdfMailService {
     private static final Logger logger = LoggerFactory.getLogger(JavaMailSender.class);
 
 
-    private final String MESSAGE_SUBJECT = "Vytvořené PDF z PowerFLOW";
-    private final String EMAIL = "flow@notix.cz";
+    private final String MESSAGE_SUBJECT = "Created PDF";
+    private final String EMAIL = "test@gmail.com";
 
     @Autowired
     public PdfMailService(JavaMailSender javaMailSender) {
@@ -59,7 +59,7 @@ public class PdfMailService {
         DataSource pdfAttachment = new ByteArrayDataSource(baos.toByteArray(), "application/pdf");
 
         try {
-            helper.addAttachment("PowerFLOW.pdf", pdfAttachment);
+            helper.addAttachment("file.pdf", pdfAttachment);
         } catch (MessagingException e) {
             throw  new CustomException(ResponseError.ErrorType.MESSAGING_EXCEPTION,e.getClass().toString(),"there is some problem with attaching pdf file to message");
 
@@ -78,11 +78,9 @@ public class PdfMailService {
         String metaLang = "<meta http-equiv=\"Content-Language\" content=\"cs\" />";
         String encoding = "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=Windows-1250\" />";
 
-        result = "<!DOCTYPE html><html><head>" + metaLang + "" + encoding + "</head> <body><div>Dobrý den,<br/><br/>" +
-                "zasíláme vám vytvořené PDF k dalšímu zpracování.<br/><br/>" +
-                "S přáním hezkého dne<br/>" +
-                "<b>Tým PowerFLOW</b><br/>" +
-                "<a href=\"https://www.powerflow.cz/\">www.powerflow.cz</a></div> </body></html>";
+        result = "<!DOCTYPE html><html><head>" + metaLang + "" + encoding + "</head> <body><div>Hello,<br/><br/>" +
+                "Here is your pdf.<br/><br/>" +
+                "</body></html>";
 
         return result;
     }

@@ -1,10 +1,10 @@
-package cz.notix.outputengine.Controllers;
+package cz.nikkos.outputengine.Controllers;
 
 
-import cz.notix.outputengine.ExceptionHandling.CustomException;
-import cz.notix.outputengine.ExceptionHandling.ResponseError;
-import cz.notix.outputengine.Model.TemplateFile;
-import cz.notix.outputengine.Repository.FileRepository;
+import cz.nikkos.outputengine.ExceptionHandling.CustomException;
+import cz.nikkos.outputengine.ExceptionHandling.ResponseError;
+import cz.nikkos.outputengine.Model.TemplateFile;
+import cz.nikkos.outputengine.Repository.FileRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

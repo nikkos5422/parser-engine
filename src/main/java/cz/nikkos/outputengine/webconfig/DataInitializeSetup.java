@@ -1,8 +1,8 @@
-package cz.notix.outputengine.webconfig;
+package cz.nikkos.outputengine.webconfig;
 
-import cz.notix.outputengine.ExceptionHandling.CustomException;
-import cz.notix.outputengine.Model.User;
-import cz.notix.outputengine.Services.UserService;
+import cz.nikkos.outputengine.ExceptionHandling.CustomException;
+import cz.nikkos.outputengine.Model.User;
+import cz.nikkos.outputengine.Services.UserService;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 

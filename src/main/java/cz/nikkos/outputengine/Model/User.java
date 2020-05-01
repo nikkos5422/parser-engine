@@ -1,4 +1,4 @@
-package cz.notix.outputengine.Model;
+package cz.nikkos.outputengine.Model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

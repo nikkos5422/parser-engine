@@ -1,7 +1,7 @@
-package cz.notix.outputengine.Repository;
+package cz.nikkos.outputengine.Repository;
 
 
-import cz.notix.outputengine.Model.TemplateFile;
+import cz.nikkos.outputengine.Model.TemplateFile;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

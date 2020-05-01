@@ -1,4 +1,4 @@
-package cz.notix.outputengine.ExceptionHandling;
+package cz.nikkos.outputengine.ExceptionHandling;
 
 
 import lombok.AllArgsConstructor;

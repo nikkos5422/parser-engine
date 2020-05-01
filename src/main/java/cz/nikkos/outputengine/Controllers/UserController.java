@@ -1,8 +1,8 @@
-package cz.notix.outputengine.Controllers;
+package cz.nikkos.outputengine.Controllers;
 
-import cz.notix.outputengine.ExceptionHandling.CustomException;
-import cz.notix.outputengine.Model.User;
-import cz.notix.outputengine.Services.UserService;
+import cz.nikkos.outputengine.ExceptionHandling.CustomException;
+import cz.nikkos.outputengine.Model.User;
+import cz.nikkos.outputengine.Services.UserService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

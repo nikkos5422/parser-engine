@@ -1,4 +1,4 @@
-package cz.notix.outputengine.webconfig;
+package cz.nikkos.outputengine.webconfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

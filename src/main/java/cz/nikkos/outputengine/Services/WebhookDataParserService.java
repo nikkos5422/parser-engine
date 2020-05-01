@@ -1,9 +1,9 @@
-package cz.notix.outputengine.Services;
+package cz.nikkos.outputengine.Services;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import cz.notix.outputengine.ExceptionHandling.CustomException;
-import cz.notix.outputengine.ExceptionHandling.ResponseError;
+import cz.nikkos.outputengine.ExceptionHandling.CustomException;
+import cz.nikkos.outputengine.ExceptionHandling.ResponseError;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
