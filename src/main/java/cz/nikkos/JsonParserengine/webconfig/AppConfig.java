@@ -1,11 +1,9 @@
-package cz.nikkos.outputengine.webconfig;
+package cz.nikkos.JsonParserengine.webconfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
-
-import java.util.Properties;
 
 @Configuration
 public class AppConfig {

@@ -1,7 +1,7 @@
-package cz.nikkos.outputengine.Services;
+package cz.nikkos.JsonParserengine.Services;
 
-import cz.nikkos.outputengine.ExceptionHandling.CustomException;
-import cz.nikkos.outputengine.ExceptionHandling.ResponseError;
+import cz.nikkos.JsonParserengine.ExceptionHandling.CustomException;
+import cz.nikkos.JsonParserengine.ExceptionHandling.ResponseError;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperPrint;

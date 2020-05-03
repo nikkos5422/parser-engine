@@ -1,8 +1,8 @@
-package cz.nikkos.outputengine.Services;
+package cz.nikkos.JsonParserengine.Services;
 
-import cz.nikkos.outputengine.ExceptionHandling.CustomException;
-import cz.nikkos.outputengine.Model.User;
-import cz.nikkos.outputengine.Repository.UserRepository;
+import cz.nikkos.JsonParserengine.ExceptionHandling.CustomException;
+import cz.nikkos.JsonParserengine.Model.User;
+import cz.nikkos.JsonParserengine.Repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 @Service

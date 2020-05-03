@@ -1,4 +1,4 @@
-package cz.nikkos.outputengine.Model;
+package cz.nikkos.JsonParserengine.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.NoArgsConstructor;

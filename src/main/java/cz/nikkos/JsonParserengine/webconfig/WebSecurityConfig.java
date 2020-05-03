@@ -1,4 +1,4 @@
-package cz.nikkos.outputengine.webconfig;
+package cz.nikkos.JsonParserengine.webconfig;
 
 
 import org.springframework.context.annotation.Bean;

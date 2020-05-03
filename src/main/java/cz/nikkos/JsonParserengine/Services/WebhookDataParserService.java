@@ -1,9 +1,9 @@
-package cz.nikkos.outputengine.Services;
+package cz.nikkos.JsonParserengine.Services;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import cz.nikkos.outputengine.ExceptionHandling.CustomException;
-import cz.nikkos.outputengine.ExceptionHandling.ResponseError;
+import cz.nikkos.JsonParserengine.ExceptionHandling.CustomException;
+import cz.nikkos.JsonParserengine.ExceptionHandling.ResponseError;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;

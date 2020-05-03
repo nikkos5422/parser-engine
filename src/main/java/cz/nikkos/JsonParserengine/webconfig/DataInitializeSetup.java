@@ -1,8 +1,8 @@
-package cz.nikkos.outputengine.webconfig;
+package cz.nikkos.JsonParserengine.webconfig;
 
-import cz.nikkos.outputengine.ExceptionHandling.CustomException;
-import cz.nikkos.outputengine.Model.User;
-import cz.nikkos.outputengine.Services.UserService;
+import cz.nikkos.JsonParserengine.ExceptionHandling.CustomException;
+import cz.nikkos.JsonParserengine.Model.User;
+import cz.nikkos.JsonParserengine.Services.UserService;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 

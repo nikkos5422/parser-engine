@@ -1,7 +1,7 @@
-package cz.nikkos.outputengine.Services;
+package cz.nikkos.JsonParserengine.Services;
 
-import cz.nikkos.outputengine.ExceptionHandling.CustomException;
-import cz.nikkos.outputengine.ExceptionHandling.ResponseError;
+import cz.nikkos.JsonParserengine.ExceptionHandling.CustomException;
+import cz.nikkos.JsonParserengine.ExceptionHandling.ResponseError;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.stereotype.Service;
 

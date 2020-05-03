@@ -1,7 +1,7 @@
-package cz.nikkos.outputengine.Repository;
+package cz.nikkos.JsonParserengine.Repository;
 
 
-import cz.nikkos.outputengine.Model.TemplateFile;
+import cz.nikkos.JsonParserengine.Model.TemplateFile;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

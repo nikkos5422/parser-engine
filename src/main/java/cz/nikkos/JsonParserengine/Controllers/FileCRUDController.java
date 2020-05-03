@@ -1,10 +1,10 @@
-package cz.nikkos.outputengine.Controllers;
+package cz.nikkos.JsonParserengine.Controllers;
 
 
-import cz.nikkos.outputengine.ExceptionHandling.CustomException;
-import cz.nikkos.outputengine.ExceptionHandling.ResponseError;
-import cz.nikkos.outputengine.Model.TemplateFile;
-import cz.nikkos.outputengine.Repository.FileRepository;
+import cz.nikkos.JsonParserengine.ExceptionHandling.CustomException;
+import cz.nikkos.JsonParserengine.ExceptionHandling.ResponseError;
+import cz.nikkos.JsonParserengine.Model.TemplateFile;
+import cz.nikkos.JsonParserengine.Repository.FileRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

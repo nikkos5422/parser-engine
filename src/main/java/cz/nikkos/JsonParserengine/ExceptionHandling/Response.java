@@ -1,4 +1,4 @@
-package cz.nikkos.outputengine.ExceptionHandling;
+package cz.nikkos.JsonParserengine.ExceptionHandling;
 
 
 import lombok.AllArgsConstructor;

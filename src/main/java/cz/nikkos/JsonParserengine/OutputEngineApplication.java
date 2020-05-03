@@ -1,4 +1,4 @@
-package cz.nikkos.outputengine;
+package cz.nikkos.JsonParserengine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

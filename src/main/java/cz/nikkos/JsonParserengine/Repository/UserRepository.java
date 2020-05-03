@@ -1,6 +1,6 @@
-package cz.nikkos.outputengine.Repository;
+package cz.nikkos.JsonParserengine.Repository;
 
-import cz.nikkos.outputengine.Model.User;
+import cz.nikkos.JsonParserengine.Model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
