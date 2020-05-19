@@ -60,13 +60,7 @@ public class WebhookDataParserService {
 
                     boolean enumType = attributeNodes.get(i).get("type").asText().equals("enumeration");
 
-                    if (enumType) {
-                        JsonNode enumerationValues = attributeNodes.get(i).get("enumerationValues");
-                        String embeddedValue = getValueFromEnumerationValuesArray(enumerationValues, value);
-                        embeddedValue = (embeddedValue == null) ? "" : embeddedValue;
-                        outputParametersMap.put(outputJasperName, embeddedValue);
-                        continue;
-                    }
+
 
                     if (attributeNodes.get(i).get("type").asText().equals("datetime")) {
                         String timeValue = value.substring(0, 10);
@@ -86,50 +80,12 @@ public class WebhookDataParserService {
                 }
             }
 
-            String createdBy = (objectMapper.readTree(inputJsonObject.toJSONString()).has(CREATED_BY)) ? objectMapper.readTree(inputJsonObject.toJSONString()).get("createdBy").get("fullName").asText() : "";
-            outputParametersMap.put(CREATED_BY, createdBy);
-
-            String createdOn = objectMapper.readTree(inputJsonObject.toJSONString()).has(CREATED_ON) ? parseProperDateFormat(objectMapper.readTree(inputJsonObject.toJSONString()).get("createdOn").asText().substring(0, 10)) : "";
-            outputParametersMap.put(CREATED_ON, createdOn);
-
-            String dueDate = objectMapper.readTree(inputJsonObject.toJSONString()).has(DUE_DATE) ? parseProperDateFormat(objectMapper.readTree(inputJsonObject.toJSONString()).get("dueDate").asText().substring(0, 10)) : "";
-            outputParametersMap.put(DUE_DATE, dueDate);
-
-            String subject = objectMapper.readTree(inputJsonObject.toJSONString()).has(SUBJECT) ? objectMapper.readTree(inputJsonObject.toJSONString()).get("subject").asText() : "";
-            outputParametersMap.put(SUBJECT, subject);
-
-
-            // case entity array
-            JsonNode caseEntityAttributesArray = null;
-            if (objectMapper.readTree(inputJsonObject.toJSONString()).has("caseEntity"))
-                caseEntityAttributesArray = objectMapper.readTree(inputJsonObject.toJSONString()).get("caseEntity")
-                        .get("attributes");
-
-            if (caseEntityAttributesArray != null) {
-                for (int j = 0; j < caseEntityAttributesArray.size(); j++) {
-                    String caseEntityJasperOutputName = caseEntityAttributesArray.get(j).get("code").asText();
-                    String value = (caseEntityAttributesArray.get(j).get("value") == null) ? ""
-                            : caseEntityAttributesArray.get(j).get("value").asText();
-
-                    outputParametersMap.put(caseEntityJasperOutputName, value);
-                }
-            }
         } catch (Exception e) {
             throw new CustomException(ResponseError.ErrorType.JSON_PARSING, e.getClass().toString(), "there is some problem with  reading json tree");
         }
     }
 
-    private static String getValueFromEnumerationValuesArray(JsonNode enumerationValues, String value) {
 
-        String result = "";
-        for (int i = 0; i < enumerationValues.size(); i++) {
-
-            if (enumerationValues.get(i).get("id").asText().equals(value)) {
-                result = enumerationValues.get(i).get("value").get("cs-CZ").asText();
-            }
-        }
-        return result;
-    }
 
     private static String parseProperDateFormat(String oldDateString) throws CustomException {
 

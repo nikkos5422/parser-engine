@@ -11,6 +11,7 @@ public class AppConfig {
     @Bean
     public JavaMailSender getJavaMailSender() {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+        /*here should be some settings for  message server*/
 
 
         return mailSender;
